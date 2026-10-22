@@ -1,0 +1,132 @@
+{
+  "dataset": "MHEALTH",
+  "experiment": "cross_dataset",
+  "group": null,
+  "splits": {
+    "train": [
+      "subject1",
+      "subject3",
+      "subject4",
+      "subject6",
+      "subject10"
+    ],
+    "val": [
+      "subject2",
+      "subject7"
+    ],
+    "test": [
+      "subject5",
+      "subject8",
+      "subject9"
+    ]
+  },
+  "activities": {
+    "lying": 0,
+    "sitting": 1,
+    "standing": 2,
+    "walking": 3,
+    "running": 4
+  },
+  "channels": [
+    "acc_x_forearm",
+    "acc_y_forearm",
+    "acc_z_forearm",
+    "gyr_x_forearm",
+    "gyr_y_forearm",
+    "gyr_z_forearm",
+    "mag_x_forearm",
+    "mag_y_forearm",
+    "mag_z_forearm",
+    "acc_x_ankle",
+    "acc_y_ankle",
+    "acc_z_ankle",
+    "gyr_x_ankle",
+    "gyr_y_ankle",
+    "gyr_z_ankle",
+    "mag_x_ankle",
+    "mag_y_ankle",
+    "mag_z_ankle"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -5.185637829984471,
+      -5.325946215425425,
+      1.5318851265267528,
+      -0.36701940980341935,
+      -0.34104114984074324,
+      0.35970633788566475,
+      -1.108637919505078,
+      3.3208097956101206,
+      -0.5396811484354505,
+      2.683202421231013,
+      -8.962766026517253,
+      0.21075068715795894,
+      0.21175313406700347,
+      -0.4439591477248541,
+      -0.1311465518825469,
+      0.16807970718773424,
+      -2.7113018977846384,
+      0.8496538349394765
+    ],
+    "std": [
+      6.6444723410619275,
+      7.133179307903365,
+      4.683521989430924,
+      0.45501640330274,
+      0.5366095490855148,
+      0.5040389733655077,
+      41.60508153325986,
+      34.91682578503656,
+      101.9694730367634,
+      5.435082945219157,
+      6.796246345967905,
+      7.7648906101891715,
+      0.4125944530249064,
+      0.5203258919634903,
+      0.5652415079292101,
+      100.09478389751769,
+      61.488313196721606,
+      29.25874856823783
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_forearm",
+      "acc_y_forearm",
+      "acc_z_forearm",
+      "gyr_x_forearm",
+      "gyr_y_forearm",
+      "gyr_z_forearm",
+      "mag_x_forearm",
+      "mag_y_forearm",
+      "mag_z_forearm",
+      "acc_x_ankle",
+      "acc_y_ankle",
+      "acc_z_ankle",
+      "gyr_x_ankle",
+      "gyr_y_ankle",
+      "gyr_z_ankle",
+      "mag_x_ankle",
+      "mag_y_ankle",
+      "mag_z_ankle"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "subject1",
+        "subject3",
+        "subject4",
+        "subject6",
+        "subject10"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "MHEALTH",
+      "fit_group": null,
+      "fit_protocol": "cross_dataset",
+      "fit_sample_count": 92160,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "1ab9357ff9cbe3bd9e1233d85a1663e494ac76d2e3a5afdb2f4d632a788f9ffe"
+}

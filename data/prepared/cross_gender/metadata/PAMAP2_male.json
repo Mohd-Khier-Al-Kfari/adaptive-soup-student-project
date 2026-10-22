@@ -1,0 +1,141 @@
+{
+  "dataset": "PAMAP2",
+  "experiment": "cross_gender",
+  "group": "male",
+  "splits": {
+    "status": "provisional",
+    "counts": [
+      4,
+      1,
+      2
+    ],
+    "train": [
+      "subject103",
+      "subject104",
+      "subject107",
+      "subject108"
+    ],
+    "val": [
+      "subject105"
+    ],
+    "test": [
+      "subject101",
+      "subject106"
+    ]
+  },
+  "activities": {
+    "Nordic walking": 0,
+    "ascending stairs": 1,
+    "cycling": 2,
+    "descending stairs": 3,
+    "ironing": 4,
+    "lying": 5,
+    "rope jumping": 6,
+    "running": 7,
+    "sitting": 8,
+    "standing": 9,
+    "vacuum cleaning": 10,
+    "walking": 11
+  },
+  "channels": [
+    "acc_x_hand",
+    "acc_y_hand",
+    "acc_z_hand",
+    "gyr_x_hand",
+    "gyr_y_hand",
+    "gyr_z_hand",
+    "mag_x_hand",
+    "mag_y_hand",
+    "mag_z_hand",
+    "acc_x_ankle",
+    "acc_y_ankle",
+    "acc_z_ankle",
+    "gyr_x_ankle",
+    "gyr_y_ankle",
+    "gyr_z_ankle",
+    "mag_x_ankle",
+    "mag_y_ankle",
+    "mag_z_ankle"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -5.3251309343961495,
+      1.611647030492384,
+      3.783692790841726,
+      -0.03909028651715879,
+      0.02602614031413918,
+      -0.019280345018234023,
+      23.203708180396884,
+      -6.8227360538375965,
+      -24.045139270514383,
+      9.289687076006807,
+      -0.32752295499558953,
+      -2.6479820428359653,
+      0.023959995661255624,
+      -0.03981062963666184,
+      -0.00036494533326817736,
+      -27.591777599454815,
+      2.694106662165691,
+      17.06499275297173
+    ],
+    "std": [
+      5.740457308463332,
+      6.350810077951759,
+      3.6304652710249448,
+      1.2386003150539686,
+      0.8470112888820501,
+      1.3935652304163015,
+      22.34315209233188,
+      22.56217879437717,
+      17.927632985606902,
+      6.311924089301242,
+      7.442791731770715,
+      3.8475217940304383,
+      1.105252551821944,
+      0.6475803153557945,
+      1.8890392220528256,
+      16.001061746560154,
+      19.372330324067548,
+      17.606677215871088
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_hand",
+      "acc_y_hand",
+      "acc_z_hand",
+      "gyr_x_hand",
+      "gyr_y_hand",
+      "gyr_z_hand",
+      "mag_x_hand",
+      "mag_y_hand",
+      "mag_z_hand",
+      "acc_x_ankle",
+      "acc_y_ankle",
+      "acc_z_ankle",
+      "gyr_x_ankle",
+      "gyr_y_ankle",
+      "gyr_z_ankle",
+      "mag_x_ankle",
+      "mag_y_ankle",
+      "mag_z_ankle"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "subject103",
+        "subject104",
+        "subject107",
+        "subject108"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "PAMAP2",
+      "fit_group": "male",
+      "fit_protocol": "cross_gender",
+      "fit_sample_count": 450200,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "e6dce0c987525cf9f481c0f684e1f1139353dda476577c46fd64f48bccefff52"
+}

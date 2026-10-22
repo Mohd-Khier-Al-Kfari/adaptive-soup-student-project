@@ -1,0 +1,11 @@
+name: adaptive_soup_student
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy=2.4.6
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pytorch=2.14.1
+  - pip

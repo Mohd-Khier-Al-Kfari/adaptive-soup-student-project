@@ -1,0 +1,153 @@
+{
+  "dataset": "RealWorld",
+  "experiment": "cross_age",
+  "group": "below30",
+  "splits": {
+    "subjects": [
+      "proband2",
+      "proband3",
+      "proband4",
+      "proband6",
+      "proband7",
+      "proband9",
+      "proband10",
+      "proband12",
+      "proband13",
+      "proband14"
+    ],
+    "counts": [
+      6,
+      2,
+      2
+    ],
+    "train": [
+      "proband2",
+      "proband3",
+      "proband4",
+      "proband7",
+      "proband9",
+      "proband10"
+    ],
+    "val": [
+      "proband6",
+      "proband12"
+    ],
+    "test": [
+      "proband13",
+      "proband14"
+    ]
+  },
+  "activities": {
+    "climbingdown": 0,
+    "climbingup": 1,
+    "jumping": 2,
+    "lying": 3,
+    "running": 4,
+    "sitting": 5,
+    "standing": 6,
+    "walking": 7
+  },
+  "channels": [
+    "acc_x_forearm",
+    "acc_y_forearm",
+    "acc_z_forearm",
+    "gyr_x_forearm",
+    "gyr_y_forearm",
+    "gyr_z_forearm",
+    "mag_x_forearm",
+    "mag_y_forearm",
+    "mag_z_forearm",
+    "acc_x_shin",
+    "acc_y_shin",
+    "acc_z_shin",
+    "gyr_x_shin",
+    "gyr_y_shin",
+    "gyr_z_shin",
+    "mag_x_shin",
+    "mag_y_shin",
+    "mag_z_shin"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -5.029950584670219,
+      -4.227127214099437,
+      2.319490021949293,
+      -0.015051951329985155,
+      0.0010337293119822915,
+      0.00704418507684763,
+      20.70839353957309,
+      14.849259179550238,
+      -10.442035253916039,
+      0.6197760547283033,
+      8.792790550052294,
+      -2.39444015137836,
+      0.028370135601362846,
+      0.04798533834654631,
+      -0.011436617010113044,
+      -2.9597359946366693,
+      -30.358502683842126,
+      5.094378688494757
+    ],
+    "std": [
+      6.250646232320305,
+      4.497343069776149,
+      3.968040027539808,
+      1.1185102649169854,
+      0.999349002583889,
+      1.1512530396677652,
+      22.100108370894457,
+      19.319935896343292,
+      20.98973706376211,
+      6.046523356550384,
+      5.250543678504261,
+      3.5138388304135293,
+      0.9466266562816719,
+      1.037687274204625,
+      2.228732643164981,
+      22.806465923835834,
+      14.992190836616885,
+      14.90737544252769
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_forearm",
+      "acc_y_forearm",
+      "acc_z_forearm",
+      "gyr_x_forearm",
+      "gyr_y_forearm",
+      "gyr_z_forearm",
+      "mag_x_forearm",
+      "mag_y_forearm",
+      "mag_z_forearm",
+      "acc_x_shin",
+      "acc_y_shin",
+      "acc_z_shin",
+      "gyr_x_shin",
+      "gyr_y_shin",
+      "gyr_z_shin",
+      "mag_x_shin",
+      "mag_y_shin",
+      "mag_z_shin"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "proband2",
+        "proband3",
+        "proband4",
+        "proband7",
+        "proband9",
+        "proband10"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "RealWorld",
+      "fit_group": "below30",
+      "fit_protocol": "cross_age",
+      "fit_sample_count": 1185158,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "54610378a3a98629e4afc7fe359b18c0ac02638eb9bb2d299f210237fb68ad8a"
+}

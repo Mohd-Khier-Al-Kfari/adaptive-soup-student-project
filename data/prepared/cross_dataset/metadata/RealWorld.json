@@ -1,0 +1,142 @@
+{
+  "dataset": "RealWorld",
+  "experiment": "cross_dataset",
+  "group": null,
+  "splits": {
+    "train": [
+      "proband1",
+      "proband2",
+      "proband3",
+      "proband5",
+      "proband6",
+      "proband7",
+      "proband12",
+      "proband13",
+      "proband14",
+      "proband15"
+    ],
+    "val": [
+      "proband4",
+      "proband8"
+    ],
+    "test": [
+      "proband9",
+      "proband10",
+      "proband11"
+    ]
+  },
+  "activities": {
+    "lying": 0,
+    "sitting": 1,
+    "standing": 2,
+    "walking": 3,
+    "running": 4
+  },
+  "channels": [
+    "acc_x_forearm",
+    "acc_y_forearm",
+    "acc_z_forearm",
+    "gyr_x_forearm",
+    "gyr_y_forearm",
+    "gyr_z_forearm",
+    "mag_x_forearm",
+    "mag_y_forearm",
+    "mag_z_forearm",
+    "acc_x_shin",
+    "acc_y_shin",
+    "acc_z_shin",
+    "gyr_x_shin",
+    "gyr_y_shin",
+    "gyr_z_shin",
+    "mag_x_shin",
+    "mag_y_shin",
+    "mag_z_shin"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -4.059292495122858,
+      -4.8841798819975235,
+      2.334192550129326,
+      -0.04621661439921354,
+      0.0018341997742004242,
+      -0.008149875787371865,
+      15.178257364318878,
+      18.781050076870656,
+      -11.798166431523502,
+      -0.008327171149485106,
+      8.24651145281597,
+      -2.4260974152204837,
+      0.052831376143196045,
+      0.049073701236504064,
+      -0.01414328070818387,
+      -0.921215046378996,
+      -26.395956808006567,
+      6.929578561292811
+    ],
+    "std": [
+      6.227903557400332,
+      4.851064397806018,
+      4.450155213703259,
+      1.0930091255759355,
+      1.2833509494495003,
+      1.281382015423141,
+      25.579924433257393,
+      17.763072482163484,
+      20.676155332673655,
+      6.060147069343636,
+      5.472890664576556,
+      4.048608289523055,
+      1.105154818202539,
+      1.0899991262472888,
+      2.171430189178309,
+      22.14496661247393,
+      21.012949965632703,
+      16.702563242096673
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_forearm",
+      "acc_y_forearm",
+      "acc_z_forearm",
+      "gyr_x_forearm",
+      "gyr_y_forearm",
+      "gyr_z_forearm",
+      "mag_x_forearm",
+      "mag_y_forearm",
+      "mag_z_forearm",
+      "acc_x_shin",
+      "acc_y_shin",
+      "acc_z_shin",
+      "gyr_x_shin",
+      "gyr_y_shin",
+      "gyr_z_shin",
+      "mag_x_shin",
+      "mag_y_shin",
+      "mag_z_shin"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "proband1",
+        "proband2",
+        "proband3",
+        "proband5",
+        "proband6",
+        "proband7",
+        "proband12",
+        "proband13",
+        "proband14",
+        "proband15"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "RealWorld",
+      "fit_group": null,
+      "fit_protocol": "cross_dataset",
+      "fit_sample_count": 1457409,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "422c9b2af3cdecf75c085df03b0b952ca7cd48054254b2ff8e49450719a02272"
+}

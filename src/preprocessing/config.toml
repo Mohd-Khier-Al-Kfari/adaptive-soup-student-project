@@ -1,0 +1,89 @@
+# Candidate manifests are not final. Postprocess needs --accept-provisional.
+# subject109 is excluded from the PAMAP2 cross-dataset manifest because it has
+# no recordings for the five shared activities.
+[coverage_findings.cross_dataset.PAMAP2.subject109]
+eligible = false
+evidence = "user-provided sample preprocessing log"
+reason = "Only rope jumping/transient activity observed; none of the five cross-dataset classes. Manifest revision required."
+
+[processing]
+sample_rate_hz = 50.0
+window_size = 150
+shift = 75
+shuffle_seed = 52
+max_interpolation_gap_seconds = 0.10
+max_timestamp_gap_seconds = 0.10
+resampling = "linear"
+tie_policy = "lowest_class_index"
+normalization = "training_domain"
+invalid_labels = ["", "0", "null", "unknown", "other", "transition", "transitions", "other (transient activities)"]
+
+[datasets.PAMAP2]
+url = "https://archive.ics.uci.edu/static/public/231/pamap2+physical+activity+monitoring.zip"
+archive = "pamap2.zip"
+sampling_rate_hz = 100.0
+include_optional = false
+sha256 = ""
+[datasets.RealWorld]
+url = "http://wifo5-14.informatik.uni-mannheim.de/sensor/dataset/realworld2016/realworld2016_dataset.zip"
+archive = "realworld2016_dataset.zip"
+sampling_rate_hz = 50.0
+preserve_proband2_climbingup_exclusion = true
+sha256 = ""
+[datasets.MHEALTH]
+url = "https://archive.ics.uci.edu/static/public/319/mhealth+dataset.zip"
+archive = "mhealth.zip"
+sampling_rate_hz = 50.0
+sha256 = ""
+
+[protocols.cross_dataset]
+status = "provisional"
+classes = ["lying", "sitting", "standing", "walking", "running"]
+[protocols.cross_dataset.PAMAP2]
+train = ["subject101","subject103","subject106","subject107","subject108"]
+val = ["subject105"]
+test = ["subject102","subject104"]
+[protocols.cross_dataset.RealWorld]
+train = ["proband1","proband2","proband3","proband5","proband6","proband7","proband12","proband13","proband14","proband15"]
+val = ["proband4","proband8"]
+test = ["proband9","proband10","proband11"]
+[protocols.cross_dataset.MHEALTH]
+train = ["subject1","subject3","subject4","subject6","subject10"]
+val = ["subject2","subject7"]
+test = ["subject5","subject8","subject9"]
+
+[protocols.cross_gender]
+status = "provisional"
+[protocols.cross_gender.PAMAP2.male]
+status = "provisional"
+counts = [4,1,2]
+train = ["subject103","subject104","subject107","subject108"]
+val = ["subject105"]
+test = ["subject101","subject106"]
+[protocols.cross_gender.PAMAP2.female]
+temporal_subject = "subject102"
+ratios = [0.8,0.1,0.1]
+[protocols.cross_gender.RealWorld.male]
+train = ["proband2","proband4","proband5","proband7","proband9"]
+val = ["proband3"]
+test = ["proband10","proband14"]
+[protocols.cross_gender.RealWorld.female]
+train = ["proband1","proband6","proband8","proband12"]
+val = ["proband13"]
+test = ["proband11","proband15"]
+
+[protocols.cross_age]
+status = "provisional"
+[protocols.cross_age.RealWorld.below30]
+subjects = ["proband2","proband3","proband4","proband6","proband7","proband9","proband10","proband12","proband13","proband14"]
+counts = [6,2,2]
+train = ["proband2","proband3","proband4","proband7","proband9","proband10"]
+val = ["proband6","proband12"]
+test = ["proband13","proband14"]
+[protocols.cross_age.RealWorld.age30plus]
+subjects = ["proband1","proband5","proband8","proband11","proband15"]
+counts = [3,1,1]
+train = ["proband1","proband5","proband8"]
+val = ["proband11"]
+test = ["proband15"]
+

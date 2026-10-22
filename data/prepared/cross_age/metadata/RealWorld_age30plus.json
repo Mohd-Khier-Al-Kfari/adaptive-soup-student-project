@@ -1,0 +1,140 @@
+{
+  "dataset": "RealWorld",
+  "experiment": "cross_age",
+  "group": "age30plus",
+  "splits": {
+    "subjects": [
+      "proband1",
+      "proband5",
+      "proband8",
+      "proband11",
+      "proband15"
+    ],
+    "counts": [
+      3,
+      1,
+      1
+    ],
+    "train": [
+      "proband1",
+      "proband5",
+      "proband8"
+    ],
+    "val": [
+      "proband11"
+    ],
+    "test": [
+      "proband15"
+    ]
+  },
+  "activities": {
+    "climbingdown": 0,
+    "climbingup": 1,
+    "jumping": 2,
+    "lying": 3,
+    "running": 4,
+    "sitting": 5,
+    "standing": 6,
+    "walking": 7
+  },
+  "channels": [
+    "acc_x_forearm",
+    "acc_y_forearm",
+    "acc_z_forearm",
+    "gyr_x_forearm",
+    "gyr_y_forearm",
+    "gyr_z_forearm",
+    "mag_x_forearm",
+    "mag_y_forearm",
+    "mag_z_forearm",
+    "acc_x_shin",
+    "acc_y_shin",
+    "acc_z_shin",
+    "gyr_x_shin",
+    "gyr_y_shin",
+    "gyr_z_shin",
+    "mag_x_shin",
+    "mag_y_shin",
+    "mag_z_shin"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -5.12032607608456,
+      -4.996359700231182,
+      1.1610448112237193,
+      -0.0229109910079738,
+      -0.00023671373210514137,
+      0.007150791125090283,
+      16.75627058323568,
+      21.004541577200868,
+      -6.645354819974017,
+      -0.4593449091942634,
+      8.28993750848026,
+      -1.8116823309162107,
+      0.006175197336582718,
+      0.02726902740657381,
+      -0.03494446371227342,
+      1.3826153028867059,
+      -27.353114473709013,
+      6.868473955717253
+    ],
+    "std": [
+      6.078907076901188,
+      4.399439503261094,
+      3.951928660047181,
+      1.2880249044284249,
+      1.021729729532041,
+      1.379993176122134,
+      27.078059051125937,
+      18.3834509736287,
+      20.75081217412033,
+      5.145483775280277,
+      5.272453456844888,
+      4.621277051492022,
+      1.503828857381595,
+      1.0368305380020615,
+      1.6587841951439914,
+      19.708621020050302,
+      19.399587549452633,
+      17.18302342599242
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_forearm",
+      "acc_y_forearm",
+      "acc_z_forearm",
+      "gyr_x_forearm",
+      "gyr_y_forearm",
+      "gyr_z_forearm",
+      "mag_x_forearm",
+      "mag_y_forearm",
+      "mag_z_forearm",
+      "acc_x_shin",
+      "acc_y_shin",
+      "acc_z_shin",
+      "gyr_x_shin",
+      "gyr_y_shin",
+      "gyr_z_shin",
+      "mag_x_shin",
+      "mag_y_shin",
+      "mag_z_shin"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "proband1",
+        "proband5",
+        "proband8"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "RealWorld",
+      "fit_group": "age30plus",
+      "fit_protocol": "cross_age",
+      "fit_sample_count": 631349,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "181c3f90754565091c1c56ed2d493528497de3f766e71bbf480539f498a476ea"
+}

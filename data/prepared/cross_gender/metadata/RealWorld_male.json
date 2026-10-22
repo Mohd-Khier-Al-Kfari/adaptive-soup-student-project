@@ -1,0 +1,133 @@
+{
+  "dataset": "RealWorld",
+  "experiment": "cross_gender",
+  "group": "male",
+  "splits": {
+    "train": [
+      "proband2",
+      "proband4",
+      "proband5",
+      "proband7",
+      "proband9"
+    ],
+    "val": [
+      "proband3"
+    ],
+    "test": [
+      "proband10",
+      "proband14"
+    ]
+  },
+  "activities": {
+    "climbingdown": 0,
+    "climbingup": 1,
+    "jumping": 2,
+    "lying": 3,
+    "running": 4,
+    "sitting": 5,
+    "standing": 6,
+    "walking": 7
+  },
+  "channels": [
+    "acc_x_forearm",
+    "acc_y_forearm",
+    "acc_z_forearm",
+    "gyr_x_forearm",
+    "gyr_y_forearm",
+    "gyr_z_forearm",
+    "mag_x_forearm",
+    "mag_y_forearm",
+    "mag_z_forearm",
+    "acc_x_shin",
+    "acc_y_shin",
+    "acc_z_shin",
+    "gyr_x_shin",
+    "gyr_y_shin",
+    "gyr_z_shin",
+    "mag_x_shin",
+    "mag_y_shin",
+    "mag_z_shin"
+  ],
+  "sampling_rate_hz": 50.0,
+  "window_size": 150,
+  "shift": 75,
+  "normalization": {
+    "mean": [
+      -4.852623335040925,
+      -4.505422540073379,
+      2.4123633219287894,
+      -0.009461082947552137,
+      -0.008210639851144869,
+      0.007826100768340661,
+      17.414246199062937,
+      16.515484018339695,
+      -9.721482251820284,
+      0.8413702427580689,
+      8.589644577739229,
+      -2.3676565469960558,
+      0.01556636254538144,
+      0.044847393318163085,
+      -0.019151381985454696,
+      -3.9415194213427673,
+      -28.30060545913248,
+      6.52095527590097
+    ],
+    "std": [
+      6.200847164950175,
+      4.343470454649423,
+      3.8077059028586087,
+      1.122642513590789,
+      0.9706369933270859,
+      1.1295299419674723,
+      23.480868956975858,
+      19.30696070478686,
+      19.896012109700337,
+      5.834300208512863,
+      5.345186765223494,
+      3.9102337072871043,
+      1.0430533326697964,
+      1.0317773034614117,
+      2.1117663985524766,
+      21.535135656282744,
+      17.428760808386798,
+      15.0337483902281
+    ],
+    "constant_channel_indices": [],
+    "channel_names": [
+      "acc_x_forearm",
+      "acc_y_forearm",
+      "acc_z_forearm",
+      "gyr_x_forearm",
+      "gyr_y_forearm",
+      "gyr_z_forearm",
+      "mag_x_forearm",
+      "mag_y_forearm",
+      "mag_z_forearm",
+      "acc_x_shin",
+      "acc_y_shin",
+      "acc_z_shin",
+      "gyr_x_shin",
+      "gyr_y_shin",
+      "gyr_z_shin",
+      "mag_x_shin",
+      "mag_y_shin",
+      "mag_z_shin"
+    ],
+    "provenance": {
+      "fit_subjects": [
+        "proband2",
+        "proband4",
+        "proband5",
+        "proband7",
+        "proband9"
+      ],
+      "fit_partition": "train",
+      "fit_dataset": "RealWorld",
+      "fit_group": "male",
+      "fit_protocol": "cross_gender",
+      "fit_sample_count": 1010483,
+      "mode": "training_domain"
+    }
+  },
+  "fingerprint": "69900dd5e59d8df0d38b3a38baba3a8f56908d94cb257fe0680cb557e24751cb"
+}
