@@ -227,3 +227,20 @@ If prepared data are missing, run `python run_pipeline.py` and enable the requir
 ## Git and generated files
 
 The repository tracks source code, configuration, tests, and documentation. Raw datasets, processed/prepared arrays, reports, logs, generated plots, caches, virtual environments, and model checkpoints are generated locally and ignored by Git. This keeps the public repository small while preserving the commands and documentation needed to reproduce the workflow.
+
+## Included student assets
+
+The repository includes the prepared experiment data and pretrained transfer outputs so students can load and evaluate them immediately after cloning. Large binary files are stored with Git LFS.
+
+After cloning, install Git LFS once and fetch the assets:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+The included prepared files are under `data/prepared/` and include the three cross-dataset groups, the PAMAP2 and RealWorld cross-gender groups, and the RealWorld cross-age groups. The included pretrained outputs are under `models/` and contain the completed transfer directories described above.
+
+Raw source archives are not included because they are third-party downloads. They remain excluded under `data/original_datasets/`. If the student needs to rebuild the prepared files, place or download the source archives there and run `python run_pipeline.py`.
+
+The prepared assets require substantial local disk space. A normal Git clone without Git LFS pointers is incomplete for data loading; run `git lfs pull` before using `load_experiment.py`, `plot_experiment.py`, or the training scripts.

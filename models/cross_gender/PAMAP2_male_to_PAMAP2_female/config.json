@@ -1,0 +1,27 @@
+{
+  "transfer": "PAMAP2_male_to_PAMAP2_female",
+  "family": "cross_gender",
+  "source": "PAMAP2_male",
+  "target": "PAMAP2_female",
+  "seed": 52,
+  "epochs": 30,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "device": "cuda:0",
+  "label_map": {
+    "Nordic walking": 0,
+    "ascending stairs": 1,
+    "cycling": 2,
+    "descending stairs": 3,
+    "ironing": 4,
+    "lying": 5,
+    "rope jumping": 6,
+    "running": 7,
+    "sitting": 8,
+    "standing": 9,
+    "vacuum cleaning": 10,
+    "walking": 11
+  },
+  "training_shuffle": false
+}

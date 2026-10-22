@@ -6,14 +6,7 @@ env/
 
 data/original_datasets/
 data/processed_datasets/
-data/prepared/**/features.pkl
-data/prepared/**/evaluation_labels.pkl
 data/reports/
 data/prepared/plots/
 logs/
-
-models/
-models/**/*.pt
-models/**/*.pth
-models/**/*.ckpt
-models/**/*.bin
+*.egg-info/

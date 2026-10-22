@@ -1,0 +1,23 @@
+{
+  "transfer": "RealWorld_age30plus_to_RealWorld_below30",
+  "family": "cross_age",
+  "source": "RealWorld_age30plus",
+  "target": "RealWorld_below30",
+  "seed": 52,
+  "epochs": 30,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "device": "cuda:0",
+  "label_map": {
+    "climbingdown": 0,
+    "climbingup": 1,
+    "jumping": 2,
+    "lying": 3,
+    "running": 4,
+    "sitting": 5,
+    "standing": 6,
+    "walking": 7
+  },
+  "training_shuffle": false
+}

@@ -1,0 +1,20 @@
+{
+  "transfer": "PAMAP2_to_RealWorld",
+  "family": "cross_dataset",
+  "source": "PAMAP2",
+  "target": "RealWorld",
+  "seed": 52,
+  "epochs": 30,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "device": "cuda:0",
+  "label_map": {
+    "lying": 0,
+    "sitting": 1,
+    "standing": 2,
+    "walking": 3,
+    "running": 4
+  },
+  "training_shuffle": false
+}
